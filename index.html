@@ -1,0 +1,972 @@
+﻿<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Portofolio profesional seorang Full-Stack Developer dengan keahlian dalam membangun aplikasi modern, cepat, dan skalabel."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, developer, full-stack, programmer, web development"
+    />
+    <meta name="author" content="Folio Has" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="noise-overlay"></div>
+
+    <div class="wrapper">
+      <!-- NAV -->
+      <nav id="navbar">
+        <div class="nav-inner">
+          <a href="#hero" class="nav-logo"><span>Folio</span>Has</a>
+          <ul class="nav-links">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact" class="nav-cta">Kontak</a></li>
+          </ul>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">Tentang</a>
+        <a href="#skills" class="mob-link">Keahlian</a>
+        <a href="#experience" class="mob-link">Pengalaman</a>
+        <a href="#projects" class="mob-link">Proyek</a>
+        <a href="#contact" class="mob-link">Kontak</a>
+      </nav>
+
+      <!-- HERO -->
+      <section id="hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-greeting">Halo, saya</p>
+            <h1 class="hero-name glitch" data-text="FolioHas .">
+              Muhammad<br /><span class="highlight">Hasby S.</span>
+            </h1>
+            <p class="hero-title-line">
+              <span class="typed-text" id="typed"></span
+              ><span class="cursor"></span>
+            </p>
+            <p class="hero-desc">
+              Saya adalah lulusan Teknik Informatika dari Politeknik Caltex Riau
+              yang memiliki minat dalam pengembangan web dan teknologi. Saya
+              senang mempelajari hal baru, mengembangkan keterampilan, serta
+              membangun solusi digital yang bermanfaat dan inovatif.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn-primary" id="btn-lihat-proyek">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+                Lihat Proyek
+              </a>
+              <a href="#contact" class="btn-secondary" id="btn-hubungi-saya">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Hubungi Saya
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-image-wrap reveal">
+              <div class="about-image-frame">
+                <div class="about-avatar">
+                  <img
+                    src="assets/image/profile.jpg"
+                    alt="Foto Profil Hasby"
+                    class="avatar-icon"
+                  />
+                  <div class="avatar-code-lines">
+                    <div class="code-line">const dev = {</div>
+                    <div class="code-line">
+                      &nbsp;&nbsp;name: "Muhammad Hasby S",
+                    </div>
+                    <div class="code-line">
+                      &nbsp;&nbsp;passion: "Programming"
+                    </div>
+                    <!-- <div class="code-line">&nbsp;&nbsp;coffee: </div> -->
+                    <div class="code-line">}</div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="stat-badge stat-badge-1">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+          <div class="stat-badge stat-badge-2">
+            <span class="stat-num">40+</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div> -->
+            </div>
+            <div class="about-text">
+              <div class="reveal">
+                <div class="section-label"></div>
+                <h2 class="section-title">
+                  Tentang <span style="color: var(--green)">Saya</span>
+                </h2>
+              </div>
+              <div class="reveal reveal-delay-1">
+                <p>
+                  Saya merupakan lulusan<span> Teknik Informatika</span> dari
+                  Politeknik Caltex Riau yang memiliki ketertarikan pada
+                  pengembangan web, pemrograman, dan teknologi informasi. Saya
+                  senang mengeksplorasi ide baru, mempelajari teknologi, serta
+                  mengembangkan solusi digital yang dapat memberikan manfaat
+                  bagi banyak orang.
+                  <!-- <span>intuitif</span> sambil memastikan
+                  performa backend yang <span>robust</span> dan
+                  <span>skalabel</span>. Setiap baris kode adalah kesempatan
+                  untuk belajar sesuatu yang baru. -->
+                </p>
+              </div>
+              <div class="about-info-grid reveal reveal-delay-2">
+                <div class="info-item">
+                  <span class="info-label">Lokasi</span
+                  ><span class="info-value">Riau, Pekanbaru</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Status</span
+                  ><span class="info-value" style="color: var(--green)"
+                    >&#9679; Open to Work</span
+                  >
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Fokus</span
+                  ><span class="info-value">Web &amp; Mobile Dev</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Pendidikan</span
+                  ><span class="info-value">D4 Teknik Informatika</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="container">
+          <div class="skills-header">
+            <div>
+              <div class="section-label reveal">Keahlian</div>
+              <h2 class="section-title reveal reveal-delay-1">
+                Tech <span style="color: var(--green)">Stack</span>
+              </h2>
+            </div>
+            <p
+              class="section-subtitle reveal"
+              style="max-width: 320px; text-align: right"
+            >
+              Teknologi yang saya kuasai untuk membangun solusi digital
+              end-to-end.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <span class="skill-card-icon">&#127912;</span>
+              <div class="skill-card-title">Frontend</div>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span
+                ><span class="skill-tag">CSS</span
+                ><span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React.js</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-1">
+              <span class="skill-card-icon">&#9881;&#65039;</span>
+              <div class="skill-card-title">Backend</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PHP</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-2">
+              <span class="skill-card-icon">&#128451;&#65039;</span>
+              <div class="skill-card-title">Database</div>
+              <div class="skill-tags">
+                <span class="skill-tag">MySQL</span
+                ><span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Firebase</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-3">
+              <span class="skill-card-icon">&#9925;&#65039;</span>
+              <div class="skill-card-title">Cloud &amp; DevOps</div>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS</span
+                ><span class="skill-tag">Docker</span
+                ><span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Nginx</span>
+              </div>
+            </div>
+            <div class="skill-card reveal">
+              <span class="skill-card-icon">&#128241;</span>
+              <div class="skill-card-title">Mobile</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Kotlin</span
+                ><span class="skill-tag">Flutter</span>
+              </div>
+            </div>
+            <div class="skill-card reveal reveal-delay-1">
+              <span class="skill-card-icon">&#128295;</span>
+              <div class="skill-card-title">Tools &amp; Lainnya</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span
+                ><span class="skill-tag">Figma</span
+                ><span class="skill-tag">Linux</span>
+                <span class="skill-tag">Postman</span
+                ><span class="skill-tag">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="container">
+          <div class="exp-header">
+            <div class="section-label reveal">Pengalaman</div>
+            <h2 class="section-title reveal reveal-delay-1">
+              Perjalanan <span style="color: var(--green)">Karir</span>
+            </h2>
+            <p class="section-subtitle reveal reveal-delay-2">
+              Setiap peran membentuk keahlian dan perspektif saya sebagai
+              seorang developer.
+            </p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <span class="timeline-period"
+                  >Agustus 2025 &mdash; Desember 2025</span
+                ><span class="timeline-badge">Full-time</span>
+              </div>
+              <h3 class="timeline-role">IT Support</h3>
+              <p class="timeline-company">
+                PT. Prosys Bangun Persada &middot; Riau
+              </p>
+              <p class="timeline-desc">
+                Saya mendapatkan pengalaman profesional melalui kegiatan magang
+                di PT Prosys Bangun Persada sebagai IT Support. Pengalaman
+                tersebut membantu saya mengembangkan kemampuan dalam pemecahan
+                masalah, dukungan teknis, komunikasi, serta memahami bagaimana
+                bekerja secara profesional di lingkungan kerja.
+              </p>
+              <!-- <div class="timeline-techs">
+                <span class="timeline-tech">React.js</span
+                ><span class="timeline-tech">Node.js</span
+                ><span class="timeline-tech">PostgreSQL</span
+                ><span class="timeline-tech">Redis</span
+                ><span class="timeline-tech">Docker</span
+                ><span class="timeline-tech">AWS</span>
+              </div> -->
+            </div>
+            <!-- <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <span class="timeline-period">2020 &mdash; 2022</span
+                ><span class="timeline-badge">Full-time</span>
+              </div>
+              <h3 class="timeline-role">Full-Stack Developer</h3>
+              <p class="timeline-company">
+                Startup Fintech ID &middot; Bandung
+              </p>
+              <p class="timeline-desc">
+                Mengembangkan sistem pembayaran digital yang digunakan oleh 50K+
+                merchant di seluruh Indonesia. Bertanggung jawab atas integrasi
+                payment gateway, keamanan transaksi, dan dashboard analytics
+                real-time.
+              </p>
+              <div class="timeline-techs">
+                <span class="timeline-tech">Vue.js</span
+                ><span class="timeline-tech">Python</span
+                ><span class="timeline-tech">Django</span
+                ><span class="timeline-tech">MongoDB</span
+                ><span class="timeline-tech">Kubernetes</span>
+              </div>
+            </div> -->
+            <!-- <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <span class="timeline-period">2019 &mdash; 2020</span
+                ><span class="timeline-badge">Kontrak</span>
+              </div>
+              <h3 class="timeline-role">Frontend Developer</h3>
+              <p class="timeline-company">
+                Digital Agency Kreatif &middot; Remote
+              </p>
+              <p class="timeline-desc">
+                Membangun UI/UX untuk 15+ klien dari berbagai industri, mulai
+                dari healthcare hingga e-learning. Mengkhususkan diri dalam
+                animasi web dan performa loading halaman yang optimal.
+              </p>
+              <div class="timeline-techs">
+                <span class="timeline-tech">React.js</span
+                ><span class="timeline-tech">GSAP</span
+                ><span class="timeline-tech">Sass</span
+                ><span class="timeline-tech">Firebase</span>
+              </div>
+            </div> -->
+            <!-- <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-meta">
+                <span class="timeline-period">2018 &mdash; 2019</span
+                ><span class="timeline-badge">Magang</span>
+              </div>
+              <h3 class="timeline-role">Junior Web Developer</h3>
+              <p class="timeline-company">
+                PT. Inovasi Digital &middot; Yogyakarta
+              </p>
+              <p class="timeline-desc">
+                Memulai karir dengan membantu pengembangan aplikasi web internal
+                perusahaan. Belajar fundamental pengembangan web dan metodologi
+                Agile dalam lingkungan profesional pertama saya.
+              </p>
+              <div class="timeline-techs">
+                <span class="timeline-tech">HTML/CSS</span
+                ><span class="timeline-tech">JavaScript</span
+                ><span class="timeline-tech">PHP</span
+                ><span class="timeline-tech">MySQL</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="container">
+          <div class="projects-header">
+            <div>
+              <div class="section-label reveal">Proyek</div>
+              <h2 class="section-title reveal reveal-delay-1">
+                Karya <span style="color: var(--green)">Terbaik</span>
+              </h2>
+            </div>
+            <p
+              class="section-subtitle reveal"
+              style="max-width: 300px; text-align: right"
+            >
+              Beberapa proyek yang paling saya banggakan dari portofolio saya.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card reveal">
+              <div class="project-thumb">
+                <div class="project-thumb-bg">
+                  import React, { useState, useEffect } from 'react' const
+                  Dashboard = () => { const [products, setProducts] =
+                  useState([]) useEffect(() => { fetch('/api/products') .then(r
+                  => r.json()) .then(data => setProducts(data)) }, []) return
+                  &lt;ProductGrid items={products} /&gt; }
+                </div>
+                <span class="project-thumb-icon">&#128721;</span>
+                <span class="project-num">#001</span>
+                <div class="project-links">
+                  <a href="#" class="project-link-btn" title="GitHub"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="#" class="project-link-btn" title="Live"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">
+                  Rancang Bangun Sistem Informasi Profil Pondok dan PPDB
+                  Berbasis Web dengan Metode Prototyping| Project Akademik
+                </h3>
+                <p class="project-desc">
+                  Membangun sistem informasi profil dan penerimaan santri baru
+                  Pondok Pesantren Al-Muhsinin berbasis website.
+                </p>
+                <div class="project-stack">
+                  <span class="project-tag">Laravel</span
+                  ><span class="project-tag">PHP </span
+                  ><span class="project-tag">MySQL</span
+                  ><span class="project-tag">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal reveal-delay-1">
+              <div class="project-thumb">
+                <div class="project-thumb-bg">
+                  async function transfer(from, to, amount) { const tx = await
+                  db.transaction() try { await tx.query(`UPDATE accounts SET
+                  balance = balance - $1 WHERE id = $2`, [amount, from]) await
+                  tx.commit() return { success: true, txId: uuid() } } catch(e)
+                  { await tx.rollback(); throw e } }
+                </div>
+                <span class="project-thumb-icon">&#128179;</span>
+                <span class="project-num">#002</span>
+                <div class="project-links">
+                  <a href="#" class="project-link-btn" title="GitHub"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="#" class="project-link-btn" title="Live"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">
+                  Deteksi Kartu Remi dengan Algoritma CNN | Mobile, Deep
+                  Learning
+                </h3>
+                <p class="project-desc">
+                  Berpartisipasi dalam proyek tim yang membangun Mobile
+                  Application berbasis CNN untuk mendeteksi kartu remi, dan
+                  berhasil mencapai tingkat akurasi hingga 95,49%.
+                </p>
+                <div class="project-stack">
+                  <span class="project-tag">Python</span
+                  ><span class="project-tag">TensorFlow</span
+                  ><span class="project-tag">Numpy</span
+                  ><span class="project-tag">Flask </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal reveal-delay-2">
+              <div class="project-thumb">
+                <div class="project-thumb-bg">
+                  const model = await tf.loadLayersModel(
+                  'model/recommendation_v2.json' ) const userVec =
+                  tf.tensor2d(userEmbed) const predictions =
+                  model.predict(userVec) const topK = predictions.topk(10) const
+                  courses = topK.indices.arraySync()
+                </div>
+                <span class="project-thumb-icon">&#129302;</span>
+                <span class="project-num">#003</span>
+                <div class="project-links">
+                  <a href="#" class="project-link-btn" title="GitHub"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="#" class="project-link-btn" title="Live"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">
+                  Aplikasi Prediksi dan Pencegahan Kecelakaan Lalu Lintas di
+                  Indonesia | Mobile, Machine Learning
+                </h3>
+                <p class="project-desc">
+                  Mengembangkan aplikasi Android untuk memantau dan memprediksi
+                  kecelakaan lalu lintas di Indonesia menggunakan model machine
+                  learning, dengan antarmuka yang responsif dan ramah pengguna.
+                </p>
+                <div class="project-stack">
+                  <span class="project-tag">Python</span
+                  ><span class="project-tag">Kotlin</span
+                  ><span class="project-tag">Firebase </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card reveal">
+              <div class="project-thumb">
+                <div class="project-thumb-bg">
+                  import 'package:flutter/material.dart'; class HealthTracker
+                  extends StatefulWidget { final String userId; const
+                  HealthTracker({required this.userId}); @override State
+                  createState() => _HealthTrackerState(); } // Realtime heart
+                  rate via BLE
+                </div>
+                <span class="project-thumb-icon">&#10084;&#65039;</span>
+                <span class="project-num">#004</span>
+                <div class="project-links">
+                  <a href="#" class="project-link-btn" title="GitHub"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="#" class="project-link-btn" title="Live"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">
+                  Aplikasi Pemetaan Web Zonasi Gym | Geographic Information
+                  System
+                </h3>
+                <p class="project-desc">
+                  Membangun aplikasi web dengan fitur geolokasi dan peta
+                  interaktif yang memungkinkan pengguna menemukan dan melihat
+                  lokasi pusat kebugaran yang tersebar di seluruh Pekanbaru.
+                </p>
+                <div class="project-stack">
+                  <span class="project-tag">Tailwind</span
+                  ><span class="project-tag">CSS</span
+                  ><span class="project-tag">Flask </span
+                  ><span class="project-tag">JSON</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="project-card reveal reveal-delay-1">
+              <div class="project-thumb">
+                <div class="project-thumb-bg">
+                  const socket = io('wss://chat.server.id') socket.on('message',
+                  (msg) => { const encrypted = CryptoJS.AES.encrypt(
+                  msg.content, secretKey ).toString() dispatch(addMessage({
+                  ...msg, encrypted, ts: Date.now() })) })
+                </div>
+                <span class="project-thumb-icon">&#128172;</span>
+                <span class="project-num">#005</span>
+                <div class="project-links">
+                  <a href="#" class="project-link-btn" title="GitHub"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="#" class="project-link-btn" title="Live"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">
+                  Platform Digital Kebudayaan & Seni Lokal Indonesia, Serta
+                  Wadah Kolaborasi Seniman & Content Creator
+                </h3>
+                <p class="project-desc">
+                  Berkolaborasi membangun platform digital yang mewadahi budaya
+                  dan seni lokal Indonesia, serta menjadi wadah kolaborasi antar
+                  seniman dan kreator konten.
+                </p>
+                <div class="project-stack">
+                  <span class="project-tag">React.js</span
+                  ><span class="project-tag">Socket.io</span
+                  ><span class="project-tag">Node.js</span
+                  ><span class="project-tag">MongoDB</span>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="project-card reveal reveal-delay-2">
+              <div class="project-thumb">
+                <div class="project-thumb-bg">
+                  SELECT u.name, COUNT(o.id) as total_orders, SUM(o.total) as
+                  revenue, AVG(r.rating) as avg_rating, RANK() OVER (ORDER BY
+                  SUM(o.total) DESC) FROM users u LEFT JOIN orders o ON u.id =
+                  o.user_id GROUP BY u.id ORDER BY revenue DESC
+                </div>
+                <span class="project-thumb-icon">&#128202;</span>
+                <span class="project-num">#006</span>
+                <div class="project-links">
+                  <a href="#" class="project-link-btn" title="GitHub"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                      /></svg
+                  ></a>
+                  <a href="#" class="project-link-btn" title="Live"
+                    ><svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                      />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">EcoCity Cleanup| Game 3D</h3>
+                <p class="project-desc">
+                  Berpartisipasi membuat Game edukatif lingkungan berbasis Unity
+                  dengan konsep open map dan misi bersih-bersih kota
+                </p>
+                <div class="project-stack">
+                  <span class="project-tag">Unity</span
+                  ><span class="project-tag">Blander</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-label reveal">Kontak</div>
+          <h2 class="section-title reveal reveal-delay-1">
+            Mari <span style="color: var(--green)">Berkolaborasi</span>
+          </h2>
+          <p class="section-subtitle reveal reveal-delay-2">
+            Punya proyek menarik? Saya selalu terbuka untuk diskusi dan peluang
+            baru.
+          </p>
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <h3>
+                Siap untuk memulai<br /><span>sesuatu yang luar biasa?</span>
+              </h3>
+              <p>
+                Apakah Anda memiliki ide, proyek, atau hanya ingin menyapa
+                &mdash; saya selalu senang mendengar dari orang-orang kreatif
+                dan inovatif!
+              </p>
+              <div class="contact-items">
+                <a
+                  href="mailto:alex@alexdev.id"
+                  class="contact-item"
+                  id="contact-email"
+                >
+                  <div class="contact-item-icon">&#9993;&#65039;</div>
+                  <div class="contact-item-text">
+                    <span class="contact-item-label">Email</span
+                    ><span class="contact-item-value"
+                      >mhdhasby25@gmail.com</span
+                    >
+                  </div>
+                </a>
+                <a
+                  href="https://wa.me/6281234567890"
+                  class="contact-item"
+                  id="contact-wa"
+                >
+                  <div class="contact-item-icon">&#128241;</div>
+                  <div class="contact-item-text">
+                    <span class="contact-item-label">WhatsApp</span
+                    ><span class="contact-item-value">+62 852-4723-1839</span>
+                  </div>
+                </a>
+                <a
+                  href="https://linkedin.com/in/alexdev"
+                  class="contact-item"
+                  id="contact-linkedin"
+                >
+                  <div class="contact-item-icon">&#128279;</div>
+                  <div class="contact-item-text">
+                    <span class="contact-item-label">LinkedIn</span
+                    ><span class="contact-item-value"
+                      >www.linkedin.com/in/muhammad-hasby-s</span
+                    >
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/alexdev"
+                  class="contact-item"
+                  id="contact-github"
+                >
+                  <div class="contact-item-icon">&#9889;</div>
+                  <div class="contact-item-text">
+                    <span class="contact-item-label">GitHub</span
+                    ><span class="contact-item-value">github.com/alexdev</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="reveal reveal-delay-2">
+              <form
+                class="contact-form"
+                id="contactForm"
+                onsubmit="handleSubmit(event)"
+              >
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Nama Lengkap</label
+                    ><input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email-field">Email</label
+                    ><input
+                      type="email"
+                      id="contact-email-field"
+                      name="email"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subjek</label
+                  ><input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    placeholder="Tentang proyek saya..."
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Pesan</label
+                  ><textarea
+                    id="contact-message"
+                    name="message"
+                    placeholder="Ceritakan lebih lanjut tentang proyek atau ide Anda..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn-primary"
+                  id="btn-kirim-pesan"
+                  style="align-self: flex-start"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                  Kirim Pesan
+                </button>
+              </form>
+              <div
+                id="form-success"
+                style="
+                  display: none;
+                  margin-top: 20px;
+                  padding: 16px 20px;
+                  background: var(--green-glow2);
+                  border: 1px solid var(--green);
+                  border-radius: 8px;
+                  color: var(--green);
+                  font-family: var(--font-mono);
+                  font-size: 0.85rem;
+                "
+              >
+                &#10003; Pesan berhasil dikirim! Saya akan membalas dalam 24
+                jam.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-inner">
+          <p class="footer-copy">
+            &copy; 2026 <span></span>. Dibuat dengan &#9829; dan banyak
+            &#9749;
+          </p>
+          <div class="footer-socials">
+            <a
+              href="https://github.com/alexdev"
+              class="footer-social"
+              title="GitHub"
+              id="footer-github"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/alexdev"
+              class="footer-social"
+              title="LinkedIn"
+              id="footer-linkedin"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/alexdev"
+              class="footer-social"
+              title="Twitter"
+              id="footer-twitter"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
